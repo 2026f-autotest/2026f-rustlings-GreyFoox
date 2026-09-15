@@ -22,3 +22,8 @@ rank/
 __pycache__/
 exercises/tests/Cargo.toml
 exercises/tests/Cargo.lock
+
+exercises/**
+!exercises/**/
+!exercises/**/*.rs
+!exercises/**/*.md
