@@ -23,7 +23,12 @@ __pycache__/
 exercises/tests/Cargo.toml
 exercises/tests/Cargo.lock
 
-exercises/**
-!exercises/**/
-!exercises/**/*.rs
-!exercises/**/*.md
+# Code Runner / rustc 在题目旁生成的运行文件（无扩展名；不会匹配 .rs/.md）
+exercises/*[0-9]
+exercises/*/*[0-9]
+exercises/tests/build
+exercises/conversions/using_as
+exercises/conversions/from_into
+exercises/conversions/from_str
+exercises/conversions/try_from_into
+exercises/conversions/as_ref_mut
