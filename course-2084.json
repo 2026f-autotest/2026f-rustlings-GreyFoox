@@ -2,8 +2,8 @@
   "schema": 1,
   "courseId": 2084,
   "repository": "2026f-autotest/2026f-rustlings-GreyFoox",
-  "commit": "91e36191bfd8c06821d5bb6e98e7fb1eff3530f2",
-  "score": 34,
+  "commit": "b8b2c2c468c4cf0686888f099fb14c45e02337a0",
+  "score": 35,
   "totalScore": 110,
   "exercises": [
     {
@@ -247,9 +247,9 @@
     {
       "name": "enums2",
       "max": 1,
-      "score": 0,
-      "status": "fail",
-      "exitCode": 1
+      "score": 1,
+      "status": "pass",
+      "exitCode": 0
     },
     {
       "name": "enums3",
@@ -778,9 +778,9 @@
     }
   ],
   "student": "GreyFoox",
-  "runId": "35169054896",
+  "runId": "35169367134",
   "runAttempt": "1",
   "upload": {
-    "status": "accepted"
+    "status": "pending"
   }
 }
