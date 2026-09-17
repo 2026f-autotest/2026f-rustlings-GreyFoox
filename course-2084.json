@@ -2,8 +2,8 @@
   "schema": 1,
   "courseId": 2084,
   "repository": "2026f-autotest/2026f-rustlings-GreyFoox",
-  "commit": "b1b0f0560a263cf60d119364e605c0348748d908",
-  "score": 43,
+  "commit": "2d4821c1b8f1d74096379074554730617b2fca33",
+  "score": 46,
   "totalScore": 110,
   "exercises": [
     {
@@ -310,23 +310,23 @@
     {
       "name": "hashmaps1",
       "max": 1,
-      "score": 0,
-      "status": "fail",
-      "exitCode": 1
+      "score": 1,
+      "status": "pass",
+      "exitCode": 0
     },
     {
       "name": "hashmaps2",
       "max": 1,
-      "score": 0,
-      "status": "fail",
-      "exitCode": 1
+      "score": 1,
+      "status": "pass",
+      "exitCode": 0
     },
     {
       "name": "hashmaps3",
       "max": 1,
-      "score": 0,
-      "status": "fail",
-      "exitCode": 1
+      "score": 1,
+      "status": "pass",
+      "exitCode": 0
     },
     {
       "name": "quiz2",
@@ -778,9 +778,9 @@
     }
   ],
   "student": "GreyFoox",
-  "runId": "35207127998",
+  "runId": "35220098580",
   "runAttempt": "1",
   "upload": {
-    "status": "accepted"
+    "status": "pending"
   }
 }
