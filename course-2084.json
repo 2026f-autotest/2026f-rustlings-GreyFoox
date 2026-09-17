@@ -2,7 +2,7 @@
   "schema": 1,
   "courseId": 2084,
   "repository": "2026f-autotest/2026f-rustlings-GreyFoox",
-  "commit": "b8b2c2c468c4cf0686888f099fb14c45e02337a0",
+  "commit": "b874893b13ac35c56bead4eef25b9680115e3136",
   "score": 35,
   "totalScore": 110,
   "exercises": [
@@ -778,9 +778,9 @@
     }
   ],
   "student": "GreyFoox",
-  "runId": "35169367134",
+  "runId": "35170068733",
   "runAttempt": "1",
   "upload": {
-    "status": "accepted"
+    "status": "pending"
   }
 }
