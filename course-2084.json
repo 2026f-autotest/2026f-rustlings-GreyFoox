@@ -2,8 +2,8 @@
   "schema": 1,
   "courseId": 2084,
   "repository": "2026f-autotest/2026f-rustlings-GreyFoox",
-  "commit": "65e9f2aaf83a23cc6f02ee4a5ededcfcbfc8ab80",
-  "score": 109,
+  "commit": "43d42e4b45e74dbe2f1575ef60bbcea62cf5133d",
+  "score": 110,
   "totalScore": 110,
   "exercises": [
     {
@@ -758,9 +758,9 @@
     {
       "name": "algorithm8",
       "max": 1,
-      "score": 0,
-      "status": "fail",
-      "exitCode": 1
+      "score": 1,
+      "status": "pass",
+      "exitCode": 0
     },
     {
       "name": "algorithm9",
@@ -778,9 +778,9 @@
     }
   ],
   "student": "GreyFoox",
-  "runId": "35600510624",
+  "runId": "35600865299",
   "runAttempt": "1",
   "upload": {
-    "status": "accepted"
+    "status": "pending"
   }
 }
