@@ -2,7 +2,6 @@
 	single linked list merge
 	This problem requires you to merge two ordered singly linked lists into one ordered singly linked list
 */
-// I AM NOT DONE
 
 use std::fmt::{self, Display, Formatter};
 use std::ptr::NonNull;
@@ -69,15 +68,47 @@ impl<T> LinkedList<T> {
             },
         }
     }
-	pub fn merge(list_a:LinkedList<T>,list_b:LinkedList<T>) -> Self
-	{
-		//TODO
-		Self {
-            length: 0,
-            start: None,
-            end: None,
+	pub fn merge(list_a: LinkedList<T>, list_b: LinkedList<T>) -> Self
+    where
+        T: Ord,
+    {
+        let mut result = LinkedList::new();
+        let mut a = list_a.start;
+        let mut b = list_b.start;
+
+        while a.is_some() || b.is_some() {
+            let cur = match (a, b) {
+                (Some(x), Some(y)) => {
+                    if unsafe { &(*x.as_ptr()).val } <= unsafe { &(*y.as_ptr()).val } {
+                        a = unsafe { (*x.as_ptr()).next };  
+                        x
+                    } else {
+                        b = unsafe { (*y.as_ptr()).next };
+                        y
+                    }
+                }
+                (Some(x), None) => {
+                    a = unsafe { (*x.as_ptr()).next };
+                    x
+                }
+                (None, Some(y)) => {
+                    b = unsafe { (*y.as_ptr()).next };
+                    y
+                }
+                (None, None) => unreachable!(),
+            };
+
+            unsafe { (*cur.as_ptr()).next = None; }
+
+            match result.end {
+                None => result.start = Some(cur),  
+                Some(end_ptr) => unsafe { (*end_ptr.as_ptr()).next = Some(cur); },
+            }
+            result.end = Some(cur);
+            result.length += 1;
         }
-	}
+        result
+    }
 }
 
 impl<T> Display for LinkedList<T>
